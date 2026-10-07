@@ -15,16 +15,21 @@ services:
     container_name: evolution_api
     restart: always
     ports:
-      - "8081:8080"
+      - "8080:8080"
     depends_on:
       - evolution-db
     env_file:
       - .env
     volumes:
       - evolution_instances:/evolution/instances
+    networks:
+      - default
+      - fake-analyser-net
 
 volumes:
   evolution_instances:
   evolution_db_data:
 
-  
+networks:
+  fake-analyser-net:
+    external: true
