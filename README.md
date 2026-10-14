@@ -15,9 +15,9 @@ Dois projetos Docker Compose separados, conectados por uma rede compartilhada.
 
 | Serviço | Repositório / pasta | Container | Porta no PC | Porta interna |
 |---|---|---|---|---|
-| **Evolution API** | `fake_analyser_whatsapp_chatbot` (este) | `evolution_api` | 8080 | 8080 |
-| **Banco da Evolution** (Postgres) | `fake_analyser_whatsapp_chatbot` (este) | `evolution_db` | não publicada | 5432 |
-| API intermediária (FastAPI) | `fake_analyser` (outro repo) | `fake-analyser-api` | 8000 | 8000 |
+| **Evolution API** | `Whatsapp_Evolution_API` (este) | `evolution_api` | 8080 | 8080 |
+| **Banco da Evolution** (Postgres) | `Whatsapp_Evolution_API` (este) | `evolution_db` | não publicada | 5432 |
+| API intermediária (FastAPI) | `Whatsapp_Fake_Analyser_API` (outro repo) | `fake-analyser-api` | 8000 | 8000 |
 
 Ajuste os nomes das pastas se os seus forem diferentes. Todos os comandos abaixo são executados no terminal do WSL, dentro da pasta deste projeto.
 
